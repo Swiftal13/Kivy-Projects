@@ -1,0 +1,177 @@
+<MyLayout>
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+		
+		TextInput:
+			id: calc_input
+			text: ""
+			halign: "right"
+			font_size: 103
+			size_hint: (1, .30)
+			font_name: "Quicksand-Light"
+
+		GridLayout:
+			cols: 4
+			rows: 5
+
+			# Row
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "%"
+				font_name: "Quicksand-Light"
+				on_press: root.percent()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "CE"
+				font_name: "Quicksand-Light"
+				on_press: root.C()
+
+			Button:
+				id: clear
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "C"
+				on_press: root.clear()
+				font_name: "Quicksand-Light"
+				
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "/"
+				font_name: "Quicksand-Light"
+				on_press: root.divide()
+			
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "7"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.seven()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "8"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.eight()
+			
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "9"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.nine()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "X"
+				font_name: "Quicksand-Light"
+				on_press: root.multiply()
+
+			
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "4"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.four()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "5"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.five()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "6"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.six()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "-"
+				font_name: "Quicksand-Light"
+				on_press: root.subtract()
+
+			# Row
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "1"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.one()
+				
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "2"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.two()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "3"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.three()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "+"
+				font_name: "Quicksand-Light"
+				on_press: root.add()
+
+			# Row
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "+/-"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.pos_neg()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "0"
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.zero()
+
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "."
+				background_color: (157/255, 157/255, 157/255, 1)
+				font_name: "Quicksand-Light"
+				on_press: root.dot()
+				
+			Button:
+				size_hint: (.2, .2)
+				font_size: 32
+				text: "="
+				font_name: "Quicksand-Light"
+				on_press: root.equal()
+
+			
+				
+				
